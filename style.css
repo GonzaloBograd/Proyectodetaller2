@@ -1,0 +1,415 @@
+/* Estilo del registro */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.register-body {
+    background-color: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.footer-text {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.footer-text a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #777;
+  position: relative;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  width: 40%;
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+}
+.divider::before {
+  left: 0;
+}
+.divider::after {
+  right: 0;
+}
+
+/* Botones sociales */
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.social button {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.google { background: #db4437; }
+.facebook { background: #1877f2; }
+.apple { background: #000; }
+
+/* Estilo del registro */
+
+
+/* Estilo del home */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* HEADER STYLES */
+header {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 80px 20px 60px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header h1 strong {
+    color: #ffd700; /* Dorado para resaltar */
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    opacity: 0.95;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-bar {
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    background: white;
+    border-radius: 50px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 16px;
+    font-size: 1.2em;
+    border-radius: 30px;
+}
+
+.search-bar button {
+    background: #d3544a;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #b03a2e;
+}
+
+.cta-button {
+    display: block;
+    margin: 40px auto 0 auto;
+    padding: 22px 0;
+    width: 420px;
+    background: #d3544a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.4em;
+    font-weight: bold;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #b03a2e;
+}
+
+/* CATEGORIES SECTION */
+.categories {
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+}
+
+.categories h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.categories > p {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.category-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.explore-btn:hover {
+    background: #2980b9;
+}
+
+/* VEHICLES SECTION */
+.vehicles {
+    padding: 50px 20px;
+    background: white;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+}
+
+.vehicles h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.vehicle-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+}
+
+.vehicle-image {
+    height: 200px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-weight: bold;
+}
+
+.vehicle-info {
+    padding: 20px;
+}
+
+.vehicle-info h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.price {
+    color: #e74c3c;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.discount {
+    color: #27ae60;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.view-details {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.view-details:hover {
+    background: #2980b9;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    header {
+        padding: 40px 15px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .search-bar {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    
+    .search-bar input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .category-grid,
+    .vehicle-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Estilo del home */
