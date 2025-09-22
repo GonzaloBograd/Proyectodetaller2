@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explorar Vehículos Disponibles</title>
+  <meta name="description" content="Explora vehículos, filtra por marca, modelo, año y precio, y descubre las mejores opciones." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ====== Header / Navbar ====== -->
+  <header class="site-header" role="banner">
+    <div class="container header__wrap">
+      <a href="#" class="logo" aria-label="Inicio">★logo</a>
+
+      <nav class="main-nav" role="navigation" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#" aria-current="page">Browse Cars</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <form class="search" role="search" aria-label="Buscar autos">
+        <input type="search" name="q" placeholder="Buscar autos…" aria-label="Buscar"/>
+        <button type="submit" aria-label="Buscar">🔍</button>
+      </form>
+
+      <div class="header__actions">
+        <a href="#" class="link">Login</a>
+        <a href="#" class="button">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ====== Título ====== -->
+    <section class="page-title">
+      <div class="container">
+        <h1>Explorar Vehículos Disponibles</h1>
+      </div>
+    </section>
+
+    <!-- ====== Filtros ====== -->
+    <section class="filters" aria-labelledby="filters-title">
+      <div class="container">
+        <div class="filters__card" role="region" aria-label="Filtrar Vehículos">
+          <h2 id="filters-title">Filtrar Vehículos</h2>
+
+          <form class="filters__form">
+            <div class="filters__row">
+              <div class="field">
+                <label for="marca">Marca</label>
+                <div class="select">
+                  <select id="marca" name="marca" aria-label="Seleccionar marca">
+                    <option value="">Seleccione una marca</option>
+                    <option>Mercedes-Benz</option>
+                    <option>Honda</option>
+                    <option>Ford</option>
+                    <option>Tesla</option>
+                    <option>Volkswagen</option>
+                    <option>BMW</option>
+                    <option>Toyota</option>
+                    <option>Porsche</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="modelo">Modelo</label>
+                <div class="select">
+                  <select id="modelo" name="modelo" aria-label="Seleccionar modelo">
+                    <option value="">Seleccione un modelo</option>
+                    <option>Clase C</option>
+                    <option>CR-V</option>
+                    <option>Mustang</option>
+                    <option>Model 3</option>
+                    <option>F-150</option>
+                    <option>Golf</option>
+                    <option>Serie 5</option>
+                    <option>Sienna</option>
+                    <option>911 Cabriolet</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="anio">Año</label>
+                <div class="select">
+                  <select id="anio" name="anio" aria-label="Seleccionar año">
+                    <option value="">Seleccione un año</option>
+                    <option>2025</option>
+                    <option>2024</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field field--price">
+                <label for="precio-min">Rango de Precio</label>
+                <div class="price__row">
+                  <input id="precio-min" type="number" inputmode="numeric" placeholder="Precio Mín." aria-label="Precio mínimo" />
+                  <input id="precio-max" type="number" inputmode="numeric" placeholder="Precio Máx." aria-label="Precio máximo" />
+                </div>
+              </div>
+            </div>
+
+            <div class="filters__actions">
+              <button type="reset" class="button button--ghost">Restablecer</button>
+              <button type="submit" class="button">Aplicar Filtros</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Cards / Resultados ====== -->
+    <section class="results" aria-labelledby="results-title">
+      <div class="container">
+        <h2 id="results-title" class="sr-only">Resultados</h2>
+
+        <div class="cards">
+          <!-- Card 1 -->
+          <article class="card car-card">
+            <figure class="car-car
